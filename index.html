@@ -1,64 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memo Log</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <h2 class="logo">Memo Log</h2>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <img src="images/bg-desktop-dark.jpg" alt="Background image">
-
-        <section id="about" class="section">
-        <div class="container">
-            <h2>About Memo Log</h2>
-            <p>Memo Log is a simple and elegant todo application designed to help you organize your daily tasks. Built with modern web technologies, it provides a clean interface for managing your activities efficiently.</p>
-            <p>Features include:</p>
-            <ul>
-                <li>Add and delete tasks</li>
-                <li>Mark tasks as completed</li>
-                <li>Filter tasks by status</li>
-                <li>Responsive design for all devices</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feedback, or suggestions about Memo Log, feel free to reach out!</p>
-            <p>Email: <a href="mailto:kasembiflorence10@gmail.com">kasembiflorence10@gmail.com</a></p>
-            <p>Follow us on social media for updates @memolog.com</p>
-        </div>
-    </section>
-    </main>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script>
-        // Navbar toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
     </script>
-</body>
+  </head>
+
+  <body>
+    <header>
+      <!-- Logo    -->
+      <div class="logo">
+        <img src="images/favicon-32x32.png" alt="Logo" class="logo-image" />
+        <h2 class="logo-text">Memo Log</h2>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar"> 
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>     
+      </nav>
+    </header>
+
+    <main>
+      <img src="images/bg-desktop-dark.jpg" alt="Background image" />
+
+      <!-- <section id="about" class="section">
+        <div class="container">
+          <h2>About Memo Log</h2>
+          <p>
+            Memo Log is a simple and elegant todo application designed to help
+            you organize your daily tasks. Built with modern web technologies,
+            it provides a clean interface for managing your activities
+            efficiently.
+          </p>
+          <p>Features include:</p>
+          <ul>
+            <li>Add and delete tasks</li>
+            <li>Mark tasks as completed</li>
+            <li>Filter tasks by status</li>
+            <li>Responsive design for all devices</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions, feedback, or suggestions about Memo Log,
+            feel free to reach out!
+          </p>
+          <p>
+            Email:
+            <a href="mailto:kasembiflorence10@gmail.com"
+              >kasembiflorence10@gmail.com</a
+            >
+          </p>
+          <p>Follow us on social media for updates @memolog.com</p>
+        </div>
+      </section> -->
+    </main>
+  </body>
 </html>

@@ -10,27 +10,43 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Center main content */
-main {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    min-height: 100vh;
-    background-color: hsl(235, 21%, 11%);
-}
 
-img{
-    
-    width: 100%;
-   height:200px;
-object-fit: cover;
-
-}
 
 /* Navbar Styles */
-.navbar {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+
     background-color: hsl(235, 24%, 19%);
-    height: 80px;
+    height: 64px;
+    max-width: 1500px;
+    width: 100%;
+
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo-image {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo-text {
+    color: hsl(234, 39%, 85%);
+    font-size: 1.5rem;
+}
+
+.navbar {
+    
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,17 +56,8 @@ object-fit: cover;
     z-index: 999;
 }
 
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    max-width: 1500px;
-    width: 100%;
-    padding: 0 20px;
-}
 
-.logo {
+.logo-text {
     color: hsl(234, 39%, 85%);
     font-size: 1.5rem;
 }
@@ -59,7 +66,8 @@ object-fit: cover;
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
+    gap:16px;
 }
 
 .nav-item {
@@ -89,6 +97,24 @@ object-fit: cover;
     transition: all 0.3s ease;
 }
 
+/* Center main content */
+main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 100vh;
+    background-color: hsl(235, 21%, 11%);
+}
+
+main img{
+    
+    width: 100%;
+   height:200px;
+object-fit: cover;
+
+}
+
+
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
     .nav-menu {
@@ -114,73 +140,7 @@ object-fit: cover;
 
     .hamburger {
         display: block;
+        padding: 20px;
     }
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    /* Adjust image height for mobile */
-    img {
-        height: 150px;
-    }
-}
-
-/* Section Styles */
-.section {
-    padding: 60px 20px;
-    background-color: hsl(235, 21%, 11%);
-    color: hsl(234, 39%, 85%);
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: hsl(234, 39%, 85%);
-}
-
-.section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.section ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.section li {
-    margin: 10px 0;
-    font-size: 1rem;
-}
-
-.section a {
-    color: hsl(220, 98%, 61%);
-    text-decoration: none;
-}
-
-.section a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Sections */
-@media (max-width: 768px) {
-    .section {
-        padding: 40px 20px;
-    }
-
-    .section h2 {
-        font-size: 1.5rem;
-    }
-
-    .section p {
-        font-size: 1rem;
-    }
-}
