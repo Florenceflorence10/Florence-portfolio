@@ -28,8 +28,9 @@ I’m a developer who enjoys turning ideas into simple, usable web experiences. 
 
 ## Contact
 
-- **GitHub:** [@your-github-username](https://github.com/your-github-username)  
-- **Email / LinkedIn:** *[optional — add when you’re ready]*
+- **GitHub:** [@Florenceflorence10](https://github.com/Florenceflorence10)  
+- **Email:** [ ]()
+- **LinkedIn:** *[ ]*
 
 ---
 
