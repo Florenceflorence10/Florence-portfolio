@@ -1,73 +1,62 @@
-# MEMO LOG - Todo App
+# Florence Kasembi
 
-![MEMO LOG Todo App](docs/screenshot.jpg) <!-- Add screenshot later -->
+**Personal portfolio** — a small, focused site showcasing who I am and what I build.
 
-## 🎉 Welcome to MEMO LOG!
+---
 
-MEMO LOG is a fully functional Todo list application inspired by [Frontend Mentor Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KoT8). Built with vanilla HTML, CSS, and JavaScript.
+## In a nutshell
 
-## ✨ Features
+I’m a developer who enjoys turning ideas into simple, usable web experiences. This repository holds my portfolio source: static HTML, CSS, and a bit of JavaScript, with room to grow.
 
-- ✅ Add new todos (Enter key or + button)
-- ✅ Mark todos as complete/incomplete
-- ✅ Delete individual todos
-- ✅ Filter todos: **All** / **Active** / **Completed**
-- ✅ Clear all completed todos
-- 🌙 Light / Dark theme toggle (persists)
-- 📱 Fully responsive (mobile-first: 375px+, desktop optimized)
-- 💾 LocalStorage persistence
-- ⌨️ Keyboard accessible
-- 🎨 Hover states & smooth transitions
+---
 
-**Bonus:** Drag & drop to reorder (HTML5 native).
+## Skill set
 
-## 🚀 Quick Start
+| Area | Notes |
+|------|--------|
+| **Web fundamentals** | HTML, CSS, and JavaScript — structure, layout, and light interactivity |
+| **Python** | Scripting and small utilities; comfortable reading and writing Python for automation and learning projects |
 
-1. Open `index.html` in your browser.
-2. No setup or build required! Works offline.
-3. Toggle theme with sun/moon icon.
-4. Start adding todos!
+---
 
-Hosted locally or deploy to Netlify/GitHub Pages/Vercel.
+## Repository
 
-## 📁 Project Structure
+- **Live site:** *[add your GitHub Pages or hosting URL when published]*  
+- **Local preview:** Open `index.html` in a browser, or serve the folder (e.g. place under XAMPP `htdocs` and visit `http://localhost/Florence-portfolio/`).
 
-```
-Memo-Log/
-├── index.html          # Main app
-├── style.css           # Responsive styles (light/dark)
-├── src/script.js       # Todo logic
-├── images/             # Assets (icons, backgrounds)
-├── docs/               # Documentation
-│   └── README.md
-├── TODO.md             # Progress tracker
-├── README.md           # You're reading it!
-└── inspo/              # Design reference
-```
+---
 
-## 🎨 Design
+## Contact
 
-- **Fonts:** [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans) (400, 700)
-- **Colors:** Exact HSL from FM style guide (primary blue gradient, neutral grays/purples)
-- **Breakpoints:** 375px mobile, 540px desktop content, 1440px max
-- **Backgrounds:** Mobile/Desktop light/dark JPGs
+- **GitHub:** [@your-github-username](https://github.com/your-github-username)  
+- **Email / LinkedIn:** *[optional — add when you’re ready]*
 
-See `style.css` comments for full style guide.
+---
 
-## 🔧 Customization
+## Using this README as a GitHub template
 
-- Edit `style.css` for colors/fonts
-- Modify `src/script.js` for new features
-- Add screenshots to docs/
+You can reuse this file for two common setups:
 
-## 📱 Testing
+### A. Project portfolio (this repo)
 
-Tested on Chrome, Firefox, Safari (mobile/desktop). Responsive from 320px+.
+1. Fork or duplicate this repository.  
+2. Replace **Florence Kasembi** with your name and adjust the **In a nutshell** and **Skill set** sections.  
+3. Update **Repository** links and **Contact**.  
+4. Commit `README.md` with your changes.
 
-## 🙏 Credits
+### B. GitHub profile README (special profile repo)
 
-- Design inspiration: [Frontend Mentor Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KoT8)
-- Assets from challenge kit
-- Built by BLACKBOXAI
+GitHub shows a `README.md` from a repository named **`your-username/your-username`**.
 
-**Happy todo-ing!** 📝✨
+1. Create a public repo with the **same name as your GitHub username**.  
+2. Add a `README.md` — you can copy the structure above (banner, about, skills, contact).  
+3. Optional: add a profile image with `![Name](url)` or HTML `<img>` if you use a raw README with allowed tags.  
+4. Push to `main`; your profile page will render it under your avatar.
+
+**Quick find-and-replace checklist for templates**
+
+- [ ] Name and headline  
+- [ ] Short bio (“In a nutshell”)  
+- [ ] Skills table or bullet list  
+- [ ] Repo / live demo URLs  
+- [ ] GitHub, email, LinkedIn, or other links  
