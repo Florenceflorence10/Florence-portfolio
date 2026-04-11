@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Log</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h2 class="logo">Memo Log</h2>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <img src="images/bg-desktop-dark.jpg" alt="Background image">
+        <div class="memo-container">
+            <h1>Memo Log</h1>
+            <form class="activity-form" id="activityForm">
+                <input type="text" id="activityInput" placeholder="Create a new todo..." required>
+                <button type="submit">Add Todo</button>
+            </form>
+            <ul class="activities-list" id="activitiesList"></ul>
+            <div class="footer">
+                <span id="itemsLeft">0 items left</span>
+                <div class="filters">
+                    <button class="filter active" data-filter="all">All</button>
+                    <button class="filter" data-filter="active">Active</button>
+                    <button class="filter" data-filter="completed">Completed</button>
+                </div>
+                <button id="clearCompleted">Clear Completed</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Memo Log</h2>
+            <p>Memo Log is a simple and elegant todo application designed to help you organize your daily tasks. Built with modern web technologies, it provides a clean interface for managing your activities efficiently.</p>
+            <p>Features include:</p>
+            <ul>
+                <li>Add and delete tasks</li>
+                <li>Mark tasks as completed</li>
+                <li>Filter tasks by status</li>
+                <li>Responsive design for all devices</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or suggestions about Memo Log, feel free to reach out!</p>
+            <p>Email: <a href="mailto:kasembiflorence10@gmail.com">kasembiflorence10@gmail.com</a></p>
+            <p>Follow us on social media for updates @memolog.com</p>
+        </div>
+    </section>
+
+    <script>
+        // Navbar toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Todo app code
+        const form = document.getElementById('activityForm');
+        const input = document.getElementById('activityInput');
+        const list = document.getElementById('activitiesList');
+        const itemsLeft = document.getElementById('itemsLeft');
+        const clearCompleted = document.getElementById('clearCompleted');
+        const filters = document.querySelectorAll('.filter');
+
+        function updateItemsLeft() {
+            const total = list.children.length;
+            const completed = list.querySelectorAll('input[type="checkbox"]:checked').length;
+            itemsLeft.textContent = `${total - completed} items left`;
+        }
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const activity = input.value.trim();
+            if(activity) {
+                const li = document.createElement('li');
+                li.innerHTML = `<input type="checkbox"> <span>${activity}</span> <button class="delete">×</button>`;
+                list.appendChild(li);
+                input.value = '';
+                updateItemsLeft();
+            }
+        });
+
+        list.addEventListener('click', function(e) {
+            if(e.target.classList.contains('delete')) {
+                e.target.parentElement.remove();
+                updateItemsLeft();
+            }
+            if(e.target.type === 'checkbox') {
+                updateItemsLeft();
+            }
+        });
+
+        clearCompleted.addEventListener('click', function() {
+            const completed = list.querySelectorAll('input[type="checkbox"]:checked');
+            completed.forEach(item => item.parentElement.remove());
+            updateItemsLeft();
+        });
+
+        filters.forEach(filter => {
+            filter.addEventListener('click', function() {
+                filters.forEach(f => f.classList.remove('active'));
+                this.classList.add('active');
+                // Note: filtering logic not implemented for simplicity
+            });
+        });
+    </script>
+</body>
+</html>

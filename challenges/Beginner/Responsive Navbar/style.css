@@ -1,0 +1,146 @@
+/* General body styling */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: hsl(234, 39%, 85%);
+    scroll-behavior: smooth;
+}
+
+
+
+/* Navbar Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+
+    background-color: hsl(235, 24%, 19%);
+    height: 64px;
+    max-width: 1500px;
+    width: 100%;
+
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo-image {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo-text {
+    color: hsl(234, 39%, 85%);
+    font-size: 1.5rem;
+}
+
+.navbar {
+    
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+.logo-text {
+    color: hsl(234, 39%, 85%);
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    gap:16px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: hsl(234, 39%, 85%);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: hsl(234, 39%, 85%);
+    transition: all 0.3s ease;
+}
+
+/* Center main content */
+main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 100vh;
+    background-color: hsl(235, 21%, 11%);
+}
+
+main img{
+    
+    width: 100%;
+   height:200px;
+object-fit: cover;
+
+}
+
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: hsl(235, 24%, 19%);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px;
+    }
+}
+

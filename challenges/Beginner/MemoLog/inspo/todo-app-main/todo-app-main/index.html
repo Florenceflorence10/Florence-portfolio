@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="">
+      <header>
+        <h1>Memo Log</h1>
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <img src="images/icon-moon.svg" alt="Moon icon" id="theme-icon">
+        </button>
+      </header>
+
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Create a new todo..." aria-label="New todo input">
+        <button type="submit" aria-label="Add todo">
+          <img src="images/icon-check.svg" alt="Check icon">
+        </button>
+      </form>
+
+      <div class="todo-list-container">
+        <ul id="todo-list" class="todo-list"></ul>
+        <footer class="todo-footer">
+          <span id="items-left">0 items left</span>
+          <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="active">Active</button>
+            <button class="filter" data-filter="completed">Completed</button>
+          </div>
+          <button id="clear-completed">Clear Completed</button>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
